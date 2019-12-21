@@ -1,3 +1,7 @@
+:root {
+    --mainColor: #bd3937;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: black;
@@ -84,11 +88,33 @@ header img {
 }
 */
 
+.menu_bar a {    
+
+    background: linear-gradient(
+        to bottom, 
+        var(--mainColor) 0%,
+        var(--mainColor) 100%
+    );
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 4px 4px;
+    padding: 5px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background-size .5s;
+}
+
+.menu_bar a:hover {
+    background-size: 4px 50px;
+}
+
 .menu_bar ul {
     
     padding:0px;
     margin: 0px;
     text-align: center;
+
+    float:right;
     
     vertical-align: top;
 }
