@@ -45,7 +45,7 @@ body {
 .menu_bar input {
     float: left;
     background-color: var(--backgroundColor);
-    background-image: url('searchicon.png');
+    background-image: url('images/searchicon.png');
     background-position: 4px 4px;
     background-repeat: no-repeat;
     padding-left: 30px;
@@ -99,7 +99,7 @@ body {
 /* ---------------------- HERO IMAGE ---------------------- */
 
 .hero-image {
-    background-image: url("banner.png");
+    background-image: url("../images/banner.png");
     height: 400px;
     background-position: center;
     background-repeat: no-repeat;
