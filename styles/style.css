@@ -100,6 +100,63 @@ body {
     padding: 5px 15px;
 }
 
+.side-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.side-menu a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    display: block;
+    background: linear-gradient( to bottom, var(--accentColor) 0%, var(--accentColor) 100%);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 4px 4px;
+    padding: 5px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background-size .5s;
+}
+
+.side-menu a:hover {
+    background-size: 4px 50px;
+}
+
+.side-menu .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-right .5s;
+    padding: 16px;
+}
+
+@media screen and (max-width: 600px) {
+    /* comes into effect for screens less than or equal to 320 pixels */
+    .menu_bar ul {
+        display: none;
+    }
+    .menu_bar .side-menu {
+        color: white;
+        display: contents;
+        float: right;
+        line-height: 70px;
+    }
+}
+
 
 /* ---------------------- HERO IMAGE ---------------------- */
 
@@ -161,11 +218,4 @@ footer {
     padding-left: 10px;
     float: bottom;
     text-align: center;
-}
-
-@media screen and (max-width: 600px) {
-    /* comes into effect for screens less than or equal to 320 pixels */
-    .menu_bar {
-        height: 120px;
-    }
 }
