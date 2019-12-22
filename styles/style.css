@@ -1,3 +1,8 @@
+@viewport {
+    width: device-width;
+    zoom: 1.0;
+}
+
 :root {
     --accentColor: #bd3937;
     --highlightColor: rgb(45, 45, 45);
@@ -45,7 +50,7 @@ body {
 .menu_bar input {
     float: left;
     background-color: var(--backgroundColor);
-    background-image: url('searchicon.png');
+    background-image: url('images/searchicon.png');
     background-position: 4px 4px;
     background-repeat: no-repeat;
     padding-left: 30px;
@@ -99,7 +104,7 @@ body {
 /* ---------------------- HERO IMAGE ---------------------- */
 
 .hero-image {
-    background-image: url("banner.png");
+    background-image: url("../images/banner.png");
     height: 400px;
     background-position: center;
     background-repeat: no-repeat;
@@ -156,4 +161,11 @@ footer {
     padding-left: 10px;
     float: bottom;
     text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    /* comes into effect for screens less than or equal to 320 pixels */
+    .menu_bar {
+        height: 120px;
+    }
 }
