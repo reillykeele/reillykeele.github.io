@@ -1,0 +1,159 @@
+:root {
+    --accentColor: #bd3937;
+    --highlightColor: rgb(45, 45, 45);
+    --backgroundColor: rgb(25, 25, 25);
+}
+
+body {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    /* font-family: "Verdana", Geneva, sans-serif; */
+    background-color: black;
+    margin: 0;
+}
+
+
+/* ---------------------- MENU BAR---------------------- */
+
+.menu_bar {
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 100%;
+    height: 70px;
+    position: relative;
+    top: 0;
+    text-align: center;
+    background-color: var(--backgroundColor);
+}
+
+.menu_bar img {
+    float: left;
+    padding: 3px;
+}
+
+.menu_bar h1 {
+    color: white;
+    padding: 0px;
+    margin: 0px;
+    float: left;
+    line-height: 70px;
+    vertical-align: center;
+    padding-left: 10px;
+    padding-right: 15px;
+}
+
+.menu_bar input {
+    float: left;
+    background-color: var(--backgroundColor);
+    background-image: url('images/searchicon.png');
+    background-position: 4px 4px;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    border: 1px solid rgb(60, 60, 60);
+    border-radius: 4px;
+    width: 30%;
+    height: 30px;
+    color: white;
+    margin-top: 25px;
+    transition: 0.5s;
+}
+
+.menu_bar input:hover {
+    background-color: black;
+    border: 1px solid white;
+}
+
+.menu_bar a {
+    background: linear-gradient( to bottom, var(--accentColor) 0%, var(--accentColor) 100%);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 4px 4px;
+    padding: 5px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background-size .5s;
+}
+
+.menu_bar a:hover {
+    background-size: 4px 50px;
+}
+
+.menu_bar ul {
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    float: right;
+    vertical-align: top;
+}
+
+.menu_bar li {
+    color: white;
+    list-style-type: none;
+    padding: 0px;
+    display: inline;
+    line-height: 70px;
+    padding: 5px 15px;
+}
+
+
+/* ---------------------- HERO IMAGE ---------------------- */
+
+.hero-image {
+    background-image: url("../images/banner.png");
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    /* top: 70px; */
+}
+
+.hero-text {
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    transform: translate(5%, 20%);
+    /* color: var(--accentColor); */
+    color: white;
+}
+
+.hero-text h1 {
+    font-size: 50px;
+}
+
+
+/* ---------------------- MAIN ---------------------- */
+
+main {
+    margin: auto;
+    padding: 0px;
+    background-color: var(--backgroundColor);
+    color: white;
+    padding-left: 10px;
+    position: relative;
+    border: 1px solid black;
+}
+
+main h2 {
+    padding-bottom: 0x;
+    font-size: 32px;
+    margin-bottom: 2px;
+}
+
+main p {
+    margin-top: 0px;
+    margin-bottom: 6px;
+}
+
+
+/* ---------------------- FOOTER ---------------------- */
+
+footer {
+    background-color: var(--highlightColor);
+    border: 1px solid var(--highlightColor);
+    color: white;
+    width: 100%;
+    padding-left: 10px;
+    float: bottom;
+    text-align: center;
+}
