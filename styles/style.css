@@ -334,10 +334,10 @@ main p {
 
 footer {
     background-color: var(--highlightColor);
-    border: 1px solid var(--highlightColor);
+    border-top: 1px solid var(--highlightColor);
+    border-bottom: 1px solid var(--highlightColor);
     color: white;
     width: 100%;
-    padding-left: 10px;
     float: bottom;
     text-align: center;
 }
