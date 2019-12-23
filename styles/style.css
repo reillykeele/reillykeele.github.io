@@ -1,18 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap');
 @viewport {
     width: device-width;
     zoom: 1.0;
 }
 
 :root {
+    /* bd3937 */
+    /* 1c25e6 */
     --accentColor: #bd3937;
-    --highlightColor: rgb(45, 45, 45);
-    --backgroundColor: rgb(25, 25, 25);
+    --highlightColor: #333333;
+    --backgroundColor: #212121;
 }
 
 body {
     /* font-family: Arial, Helvetica, sans-serif; */
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    /* font-family: "Trebuchet MS", Helvetica, sans-serif; */
     /* font-family: "Verdana", Geneva, sans-serif; */
+    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
     background-color: white;
     margin: 0px;
     padding: 0px;
@@ -194,20 +199,134 @@ main {
     padding: 0px;
     background-color: var(--backgroundColor);
     color: white;
-    padding-left: 10px;
     position: relative;
-    border: 1px solid black;
+    border: 1px solid var(--backgroundColor);
 }
 
 main h2 {
+    padding-left: 10px;
     padding-bottom: 0x;
     font-size: 32px;
     margin-bottom: 2px;
 }
 
 main p {
+    padding-left: 10px;
     margin-top: 0px;
     margin-bottom: 6px;
+}
+
+
+/* ---------------------- 'MEET THE TEAM' ---------------------- */
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.row {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    /* padding-left: 5px;
+    padding-right: 5px; */
+}
+
+.column {
+    position: relative;
+    /* Three columns side by side */
+    float: left;
+    margin: auto;
+    width: 30%;
+    margin-bottom: 16px;
+    padding-left: 1.66%;
+    padding-right: 1.66%;
+}
+
+.card {
+    /* Add some shadows to create a card effect */
+    box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.75);
+    background-color: var(--highlightColor);
+    height: 550px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.container {
+    /* Some left and right padding inside the container */
+    padding-left: 8px;
+    padding-right: 8px;
+    margin: auto;
+}
+
+.container::after,
+.row::after {
+    /* Clear floats */
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.card-img {
+    width: 100%;
+    height: 60%;
+    background-color: black;
+    /* display: inline-block; */
+    vertical-align: center;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.card-img img {
+    display: block;
+    margin: auto;
+    padding: 0px;
+    /* min-width: 100%; */
+    /* max-height: 100%; */
+    height: 100%;
+    transition: transform .5s ease;
+}
+
+.card-img:hover img {
+    transform: scale(1.075);
+}
+
+.title {
+    color: grey;
+}
+
+.button:hover {
+    background-color: red;
+}
+
+@media screen and (max-width: 1000px) {
+    /* Display the columns below each other instead of side by side on small screens */
+    .column {
+        width: 45%;
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+        /* display: block; */
+    }
+}
+
+@media screen and (max-width: 650px) {
+    /* Display the columns below each other instead of side by side on small screens */
+    .column {
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 5%;
+        /* display: block; */
+    }
+    .card-img img {
+        height: auto;
+        min-height: 100%;
+        min-width: 100%;
+        max-height: 150%;
+        max-width: 150%;
+        transition: transform .5s ease;
+    }
 }
 
 
