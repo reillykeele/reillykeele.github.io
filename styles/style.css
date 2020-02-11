@@ -7,9 +7,10 @@
 :root {
     /* bd3937 */
     /* 1c25e6 */
-    --accentColor: #bd3937;
-    --highlightColor: #333333;
-    --backgroundColor: #212121;
+    --whiteColor: #eeeeee;
+    --accentColor: #ff0000;
+    --highlightColor: #443737;
+    --backgroundColor: #272121;
 }
 
 body {
@@ -18,7 +19,7 @@ body {
     /* font-family: "Verdana", Geneva, sans-serif; */
     font-family: 'Open Sans', sans-serif;
     /* font-family: 'Roboto', sans-serif; */
-    background-color: white;
+    background-color: var(--whiteColor);
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
@@ -45,7 +46,7 @@ body {
 }
 
 .menu_bar h1 {
-    color: white;
+    color: var(--whiteColor);
     padding: 0px;
     margin: 0px;
     float: left;
@@ -66,14 +67,14 @@ body {
     border-radius: 4px;
     width: 30%;
     height: 30px;
-    color: white;
+    color: var(--whiteColor);
     margin-top: 25px;
     transition: 0.5s;
 }
 
 .menu_bar input:hover {
     background-color: black;
-    border: 1px solid white;
+    border: 1px solidvar(--whiteColor);
 }
 
 .menu_bar a {
@@ -82,7 +83,7 @@ body {
     background-repeat: repeat-x;
     background-size: 4px 4px;
     padding: 5px;
-    color: #ffffff;
+    color: var(--whiteColor);
     text-decoration: none;
     transition: background-size .5s;
 }
@@ -100,7 +101,7 @@ body {
 }
 
 .menu_bar li {
-    color: white;
+    color: var(--whiteColor);
     list-style-type: none;
     padding: 0px;
     display: inline;
@@ -130,7 +131,7 @@ body {
     background-repeat: repeat-x;
     background-size: 4px 4px;
     padding: 5px;
-    color: #ffffff;
+    color: var(--whiteColor);
     text-decoration: none;
     transition: background-size .5s;
 }
@@ -158,7 +159,7 @@ body {
         display: none;
     }
     .menu_bar .side-menu {
-        color: white;
+        color: var(--whiteColor);
         display: contents;
         float: right;
         line-height: 70px;
@@ -184,7 +185,7 @@ body {
     top: 50%;
     transform: translate(5%, 20%);
     /* color: var(--accentColor); */
-    color: white;
+    color: var(--whiteColor)
 }
 
 .hero-text h1 {
@@ -198,7 +199,7 @@ main {
     margin: auto;
     padding: 0px;
     background-color: var(--backgroundColor);
-    color: white;
+    color: var(--whiteColor);
     position: relative;
     border: 1px solid var(--backgroundColor);
 }
@@ -332,11 +333,11 @@ main p {
 
 /* ---------------------- FOOTER ---------------------- */
 
-footer {
+.footer {
     background-color: var(--highlightColor);
     border-top: 1px solid var(--highlightColor);
     border-bottom: 1px solid var(--highlightColor);
-    color: white;
+    color: var(--whiteColor);
     width: 100%;
     float: bottom;
     text-align: center;
