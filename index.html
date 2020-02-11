@@ -4,91 +4,50 @@
 <!-- The head's job is to contain metadata about hte doc -->
 
 <HEAD>
-    <!-- Metadata is data that descrbes data. We can specify the document's character encoding with charset -->
+
     <meta charset="utf-8">
-    <!-- Stuff like the Author and Description keywords make pages crawlable for search engine results. -->
+
     <meta name="author" content="Reilly Keele">
-    <meta name="description" content="This is a project to understand the basics of web development in HTML, CSS, and Javascript.">
+    <meta name="description" content="">
     <meta content='width=device-width, initial-scale=1' name='viewport' />
 
     <TITLE>Reilly Keele</TITLE>
 
-    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="img/r-icon.png" type="image/svg">
+    <!-- <link rel="stylesheet" href="styles/style.css" type="text/css"> -->
+    <style>
+        body {
+            font-family: "Open Sans", sans-serif;
+            background-color: #000000;
+            color: #eeeeee;
+        }
+        
+        h1 {
+            border-radius: 1em;
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%)
+        }
+        
+        p {
+            border-radius: 1em;
+            position: absolute;
+            top: 42.5%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%)
+        }
+    </style>
 
 </HEAD>
 
 <BODY>
 
-    <!-- MENU BAR -->
-    <div class="menu_bar">
-        <img src="images/logo.png" alt="Website Logo" width="60" height="60">
+    <h1>This page is under construction!</h1>
+    <p>Please check back later!</p>
 
-        <h1><a href="index.html">REILLY KEELE</a></h1>
-
-        <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="url">Resume</a></li>
-        </ul>
-
-        <span class="side-menu" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-    </div>
-
-    <div id="my-side-menu" class="side-menu">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="about.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="url">Resume</a>
-    </div>
-
-    <!-- BANNER -->
-    <div class="hero-image">
-        <div class="hero-text">
-            <h1>Student Game Developer</h1>
-        </div>
-    </div>
-
-    <main>
-        <h2>Heading #1</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-
-        <h2>Most Recent Projects</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-
-        <h2>Heading #3</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-    </main>
-
-    <div class="footer">
-        <p>Copyright &copy;
-            <script>
-                document.write(new Date().getFullYear());
-            </script>
-            by Reilly Keele | v0.1.0-beta
-        </p>
-    </div>
-
-    <!-- <script src=" scripts/script.js "></script> -->
-
-    <script>
-        function openNav() {
-            document.getElementById("my-side-menu ").style.width = "250px ";
-            document.getElementById("main ").style.marginRight = "250px ";
-        }
-
-        function closeNav() {
-            document.getElementById("my-side-menu ").style.width = "0 ";
-            document.getElementById("main ").style.marginRight = "0 ";
-        }
-    </script>
 
 </BODY>
 
