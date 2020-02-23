@@ -305,6 +305,17 @@ grid-container {
     padding-bottom: 2px;
 }
 
+.card .info-container h3 {
+    margin: 0px;
+    padding-top: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 0px;
+    font-size: 12px;
+    font-style: italic;
+    color: #666666;
+}
+
 .card .info-container p {
     color: #999999;
     transition: 0.2s;
