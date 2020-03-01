@@ -82,8 +82,10 @@ h2 {
     color: var(--whiteColor);
 }
 
-.menu-bar a:hover {
-    color: var(--accentColor);
+@media (hover: hover) {
+    .menu-bar a:hover {
+        color: var(--accentColor);
+    }
 }
 
 .menu-bar ul {
@@ -263,13 +265,15 @@ grid-container {
     transition: 0.2s;
 }
 
-.project-grid-item:hover {
-    border: 2px solid var(--accentColor);
-    top: -3px;
-}
+@media(hover: hover) {
+    .project-grid-item:hover {
+        border: 2px solid var(--accentColor);
+        top: -3px;
+    }
 
-.project-grid-item:hover .card .info-container p {
-    color: var(--whiteColor);
+    .project-grid-item:hover .card .info-container p {
+        color: var(--whiteColor);
+    }
 }
 
 
