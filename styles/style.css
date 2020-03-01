@@ -51,7 +51,7 @@ h2 {
 /* MENU NAVIGATION BAR */
 
 .menu-bar {
-    margin-top: 0px;
+    margin-top: 5px;
     margin-left: 0px;
     width: 100%;
     height: 70px;
@@ -64,7 +64,7 @@ h2 {
 .menu-bar img {
     float: left;
     padding: 5px;
-    padding-left: 10px;
+    margin-left: 5px;
 }
 
 .menu-bar li {
@@ -93,6 +93,25 @@ h2 {
     text-align: center;
     float: right;
     vertical-align: top;
+}
+
+@media screen and (max-width: 600px) {
+    .menu-bar ul {
+        margin-right: 12px;
+    }
+    .menu-bar li {
+        padding: 0px;
+        line-height: 70px;
+        padding-top: 5px;
+        padding-left: 8px;
+        padding-right: 0px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .menu-bar li {
+        font-size: 14px;
+    }
 }
 
 
@@ -347,13 +366,26 @@ grid-container {
 
 @media screen and (max-width: 600px) {
     .card .info-container h2 {
-        font-size: 34px;
+        font-size: 26px;
         padding-top: 2px;
     }
     .card .info-container h3 {
-        font-size: 14px;
+        font-size: 12px;
     }
     .card .info-container p {
-        font-size: 18px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .card .info-container h2 {
+        font-size: 22px;
+        padding-top: 2px;
+    }
+    .card .info-container h3 {
+        font-size: 10px;
+    }
+    .card .info-container p {
+        font-size: 14px;
     }
 }
