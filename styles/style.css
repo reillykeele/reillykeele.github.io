@@ -40,6 +40,7 @@ a {
 
 h1 {
     color: white;
+    /* font-size: 6vw; */
 }
 
 h2 {
@@ -299,17 +300,17 @@ grid-container {
 
 .card .info-container h2 {
     margin: 0px;
-    padding-top: 2px;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-bottom: 2px;
+    padding-top: 0px;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 0px;
 }
 
 .card .info-container h3 {
     margin: 0px;
     padding-top: 0px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 2%;
+    padding-right: 2%;
     padding-bottom: 0px;
     font-size: 12px;
     font-style: italic;
@@ -321,7 +322,38 @@ grid-container {
     transition: 0.2s;
     margin: 0px;
     padding-top: 0px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 2%;
+    padding-right: 2%;
     padding-bottom: 0px;
+}
+
+@media screen and (max-width: 1200px) {
+    .card .info-container h2 {
+        font-size: 20px;
+    }
+    .card .info-container h3 {}
+    .card .info-container p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .card .info-container h2 {
+        font-size: 20px;
+    }
+    .card .info-container h3 {}
+    .card .info-container p {}
+}
+
+@media screen and (max-width: 600px) {
+    .card .info-container h2 {
+        font-size: 34px;
+        padding-top: 2px;
+    }
+    .card .info-container h3 {
+        font-size: 14px;
+    }
+    .card .info-container p {
+        font-size: 18px;
+    }
 }
