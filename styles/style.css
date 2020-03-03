@@ -123,6 +123,12 @@ h2 {
     margin: 0px;
 }
 
+.socials ul {
+    padding: 0px;
+    margin: 0px;
+    margin-top: 15px;
+}
+
 .socials li {
     list-style-type: none;
     display: inline;
@@ -268,7 +274,6 @@ grid-container {
         border: 2px solid var(--accentColor);
         top: -3px;
     }
-
     .project-grid-item:hover .card .info-container p {
         color: var(--whiteColor);
     }
