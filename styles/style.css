@@ -32,6 +32,16 @@ body {
     overflow-y: scroll;
 }
 
+a {
+    transition: 0.2s;
+    text-decoration: none;
+    color: var(--whiteColor);
+}
+
+a:hover {
+    color: var(--accentColor);
+}
+
 footer {
     color: #666666;
     text-align: center;
@@ -100,7 +110,8 @@ h2 {
     padding: 5px 15px;
 }
 
-.menu-bar a {
+
+/* .menu-bar a {
     transition: 0.2s;
     text-decoration: none;
     color: var(--whiteColor);
@@ -108,7 +119,7 @@ h2 {
 
 .menu-bar a:hover {
     color: var(--accentColor);
-}
+} */
 
 .menu-bar ul {
     padding: 0px;
