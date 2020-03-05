@@ -430,3 +430,27 @@ grid-container {
         font-size: 14px;
     }
 }
+
+
+/* BANNER */
+
+.banner {
+    width: 100vw;
+    height: 27vw;
+    min-height: 150px;
+    max-height: 550px;
+    position: relative;
+    margin-top: 8px;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+.banner .img-container {
+    min-width: 100%;
+    min-height: 100%;
+    background-size: cover;
+    background-position: center;
+    /* background-image: url("../img/projects/...); */
+}
