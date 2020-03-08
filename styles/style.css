@@ -311,6 +311,10 @@ grid-container {
     transition: 0.2s;
 }
 
+.project-grid-item:active {
+    border: 2px solid var(--accentColor);
+}
+
 @media(hover: hover) {
     .project-grid-item:hover {
         border: 2px solid var(--accentColor);
