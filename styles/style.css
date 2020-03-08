@@ -57,6 +57,7 @@ footer {
 
 footer p {
     margin: 0px;
+    margin-top: 12px;
     margin-bottom: 12px;
 }
 
@@ -175,17 +176,24 @@ h2 {
     transition: 0.2s;
 }
 
-.socials svg {
-    padding: 0px;
-    transition: 0.2s;
-    fill: var(--whiteColor);
-}
-
-.socials svg:hover {
-    fill: var(--accentColor);
-}
-
 .socials img:hover {
+    background-color: var(--accentColor);
+    mix-blend-mode: multiply;
+}
+
+.socials .social-icon {
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    padding: 5px;
+    transition: 0.2s;
+    width: 32px;
+    height: 32px;
+    background-blend-mode: multiply;
+    background-color: white;
+}
+
+.socials .social-icon:hover {
     background-color: var(--accentColor);
 }
 
