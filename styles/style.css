@@ -32,6 +32,16 @@ body {
     overflow-y: scroll;
 }
 
+a {
+    transition: 0.2s;
+    text-decoration: none;
+    color: var(--whiteColor);
+}
+
+a:hover {
+    color: var(--accentColor);
+}
+
 footer {
     color: #666666;
     text-align: center;
@@ -47,6 +57,7 @@ footer {
 
 footer p {
     margin: 0px;
+    margin-top: 12px;
     margin-bottom: 12px;
 }
 
@@ -100,7 +111,8 @@ h2 {
     padding: 5px 15px;
 }
 
-.menu-bar a {
+
+/* .menu-bar a {
     transition: 0.2s;
     text-decoration: none;
     color: var(--whiteColor);
@@ -108,7 +120,7 @@ h2 {
 
 .menu-bar a:hover {
     color: var(--accentColor);
-}
+} */
 
 .menu-bar ul {
     padding: 0px;
@@ -164,17 +176,24 @@ h2 {
     transition: 0.2s;
 }
 
-.socials svg {
-    padding: 0px;
-    transition: 0.2s;
-    fill: var(--whiteColor);
-}
-
-.socials svg:hover {
-    fill: var(--accentColor);
-}
-
 .socials img:hover {
+    background-color: var(--accentColor);
+    mix-blend-mode: multiply;
+}
+
+.socials .social-icon {
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    padding: 5px;
+    transition: 0.2s;
+    width: 32px;
+    height: 32px;
+    background-blend-mode: multiply;
+    background-color: white;
+}
+
+.socials .social-icon:hover {
     background-color: var(--accentColor);
 }
 
@@ -290,6 +309,10 @@ grid-container {
     border: 2px solid transparent;
     border-radius: 5px;
     transition: 0.2s;
+}
+
+.project-grid-item:active {
+    border: 2px solid var(--accentColor);
 }
 
 @media(hover: hover) {
@@ -418,4 +441,28 @@ grid-container {
     .card .info-container p {
         font-size: 14px;
     }
+}
+
+
+/* BANNER */
+
+.banner {
+    width: 100vw;
+    height: 27vw;
+    min-height: 150px;
+    max-height: 550px;
+    position: relative;
+    margin-top: 8px;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+.banner .img-container {
+    min-width: 100%;
+    min-height: 100%;
+    background-size: cover;
+    background-position: center;
+    /* background-image: url("../img/projects/...); */
 }
