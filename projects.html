@@ -16,25 +16,20 @@
     <link rel="shortcut icon" href="img/r-icon.png" type="image/svg">
     <link rel="stylesheet" href="styles/style.css" type="text/css">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/SharedLayout.js"></script>
 </HEAD>
 
 <BODY>
 
-    <div class="menu-bar">
-        <a href="index.html"><img src="img/rk.svg" height="60"></a>
-        <ul>
-            <li><a href="about.html">about</a></li>
-            <li><a href="projects.html">projects</a></li>
-            <li><a href="reilly-keele-resume.pdf">resume</a></li>
-        </ul>
-    </div>
+    <div id="loaded-layout-nav"></div>
 
     <div class="content">
 
         <!-- PROJECTS GRID -->
         <h1>Projects</h1>
 
-        <div class="project-grid-container">
+        <div id="projects" class="project-grid-container">
             <div class="project-grid-item">
                 <a href="arrival.html">
                     <div class="card">
@@ -44,7 +39,7 @@
                         <div class="info-container">
                             <h2>Arrival</h2>
                             <h3>January 2020 - April 2020</h3>
-                            <p>An Android clone of <i>Uber</i> built using Java and Firebase for CMPUT 301.</p>
+                            <p>An Android clone of <i>Uber</i> built using Java, Firebase and Android Studio for CMPUT 301: Intro to Software Engineering.</p>
                         </div>
                     </div>
                 </a>
@@ -74,7 +69,7 @@
                         <div class="info-container">
                             <h2>The Legend of Dungeon</h2>
                             <h3>January 2018 - May 2018</h3>
-                            <p>A game programmed in Java that procedurally generates <i>LoZ</i> dungeons.</p>
+                            <p>A game programmed in Java to experiment with procedurally generating <i>LoZ</i> dungeons.</p>
                         </div>
                     </div>
                 </a>
@@ -83,33 +78,7 @@
     </div>
 
 
-    <footer>
-        <div class="socials">
-            <ul>
-                <li>
-                    <a href="https://github.com/reillykeele">
-                        <div class="social-icon" style="background-image: url(img/icons/socials/github2.svg);"></div>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/reilly-keele-81a060187/">
-                        <div class="social-icon" style="background-image: url(img/icons/socials/linkedin2.svg);"></div>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/reillykeele">
-                        <div class="social-icon" style="background-image: url(img/icons/socials/twitter2.svg);"></div>
-                    </a>
-                </li>
-            </ul>
-        </div>
-
-        <p>Reilly Keele &copy;
-            <script>
-                document.write(new Date().getFullYear())
-            </script>
-        </p>
-    </footer>
+    <div id="loaded-layout-footer"></div>
 
 </BODY>
 
