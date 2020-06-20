@@ -16,18 +16,13 @@
     <link rel="shortcut icon" href="img/r-icon.png" type="image/svg">
     <link rel="stylesheet" href="styles/style.css" type="text/css">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/SharedLayout.js"></script>
 </HEAD>
 
 <BODY>
 
-    <div class="menu-bar">
-        <a href="index.html"><img src="img/rk.svg" height="60"></a>
-        <ul>
-            <li><a href="about.html">about</a></li>
-            <li><a href="projects.html">projects</a></li>
-            <li><a href="reilly-keele-resume.pdf">resume</a></li>
-        </ul>
-    </div>
+    <div id="loaded-layout-nav"></div>
 
 
     <div class="content">
@@ -38,33 +33,7 @@
 
     </div>
 
-    <footer>
-        <div class="socials">
-            <ul>
-                <li>
-                    <a href="https://github.com/reillykeele">
-                        <div class="social-icon" style="background-image: url(img/icons/socials/github2.svg);"></div>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/reilly-keele-81a060187/">
-                        <div class="social-icon" style="background-image: url(img/icons/socials/linkedin2.svg);"></div>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/reillykeele">
-                        <div class="social-icon" style="background-image: url(img/icons/socials/twitter2.svg);"></div>
-                    </a>
-                </li>
-            </ul>
-        </div>
-
-        <p>Reilly Keele &copy;
-            <script>
-                document.write(new Date().getFullYear())
-            </script>
-        </p>
-    </footer>
+    <div id="loaded-layout-footer"></div>
 
 </BODY>
 

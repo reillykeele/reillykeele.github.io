@@ -11,23 +11,18 @@
     <meta name="description" content="This is a project to understand the basics of web development in HTML, CSS, and Javascript.">
     <meta content='width=device-width, initial-scale=1' name='viewport' />
 
-    <TITLE>Reilly Keele</TITLE>
+    <TITLE>Reilly Keele | About</TITLE>
 
     <link rel="shortcut icon" href="img/r-icon.png" type="image/svg">
     <link rel="stylesheet" href="styles/style.css" type="text/css">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/SharedLayout.js"></script>
 </HEAD>
 
 <BODY>
 
-    <div class="menu-bar">
-        <a href="index.html"><img src="img/rk.svg" height="60"></a>
-        <ul>
-            <li><a href="about.html">about</a></li>
-            <li><a href="projects.html">projects</a></li>
-            <li><a href="reilly-keele-resume.pdf">resume</a></li>
-        </ul>
-    </div>
+    <div id="loaded-layout-nav"></div>
 
     <div class="content">
         <h1>About</h1>
@@ -35,7 +30,8 @@
         <grid-container>
             <grid-item>
                 <div class="img-container">
-                    <img src="img/stock/stock0.jpg">
+                    <!-- <img src="img/stock/stock0.jpg"> -->
+                    <img src="img/about/rkeele-long.jpeg">
                 </div>
             </grid-item>
             <grid-item>
@@ -45,7 +41,7 @@
                         officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat
                         facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque
                         earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p> -->
-                    <p>I am a second year student at the University of Alberta in Edmonton, AB, pursuing a B.Sc. Computing Science Specialization in Game Development. </p>
+                    <p>I am a third year student at the University of Alberta in Edmonton, AB, pursuing a B.Sc. Computing Science Specialization in Game Development. </p>
                 </div>
             </grid-item>
             <!-- <grid-item>
@@ -60,35 +56,7 @@
         </grid-container>
     </div>
 
-    <footer>
-        <div class="socials">
-            <ul>
-                <li>
-                    <a href="https://github.com/reillykeele">
-                        <div class="social-icon" style="background-image: url(img/icons/socials/github2.svg);"></div>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/reilly-keele-81a060187/">
-                        <div class="social-icon" style="background-image: url(img/icons/socials/linkedin2.svg);"></div>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/reillykeele">
-                        <div class="social-icon" style="background-image: url(img/icons/socials/twitter2.svg);"></div>
-                    </a>
-                </li>
-            </ul>
-        </div>
-
-        <p>Reilly Keele &copy;
-            <script>
-                document.write(new Date().getFullYear())
-            </script>
-        </p>
-    </footer>
-
-
+    <div id="loaded-layout-footer"></div>
 </BODY>
 
 </HTML>

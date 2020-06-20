@@ -43,7 +43,7 @@ a:hover {
     color: var(--accentColor);
 }
 
-footer {
+.footer {
     color: #666666;
     text-align: center;
     position: absolute;
@@ -56,7 +56,7 @@ footer {
     height: 100px;
 }
 
-footer p {
+.footer p {
     margin: 0px;
     margin-top: 12px;
     margin-bottom: 12px;
@@ -183,13 +183,14 @@ color: var(--accentColor);
 }
 
 .socials .social-icon {
-    background-position: center;
+    /* background-position: center center; */
+    background-size: cover;
     background-repeat: no-repeat;
     display: inline-block;
     padding: 5px;
     transition: 0.2s;
-    width: 32px;
-    height: 32px;
+    width: 31px;
+    height: 31px;
     background-blend-mode: multiply;
     background-color: white;
 }
