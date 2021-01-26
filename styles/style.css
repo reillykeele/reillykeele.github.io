@@ -83,7 +83,7 @@ h2 {
     color: white;
 }
 
-
+/* --------------------------------------------------------------------------------- */
 /* MENU NAVIGATION BAR */
 
 .menu-bar {
@@ -151,7 +151,7 @@ color: var(--accentColor);
     }
 }
 
-
+/* --------------------------------------------------------------------------------- */
 /* SOCIAL ICONS */
 
 .socials {
@@ -199,7 +199,7 @@ color: var(--accentColor);
     background-color: var(--accentColor);
 }
 
-
+/* --------------------------------------------------------------------------------- */
 /* GRID LAYOUT */
 
 grid-container {
@@ -259,7 +259,7 @@ grid-item p {
     text-align: left;
 }
 
-
+/* --------------------------------------------------------------------------------- */
 /* PROJECT GRID */
 
 .project-grid-container {
@@ -324,7 +324,7 @@ max-width: 1000px; */
     }
 }
 
-
+/* --------------------------------------------------------------------------------- */
 /* CARD */
 
 .card {
@@ -442,7 +442,7 @@ max-width: 1000px; */
     }
 }
 
-
+/* --------------------------------------------------------------------------------- */
 /* BANNER */
 
 .banner {
@@ -464,4 +464,20 @@ max-width: 1000px; */
     background-size: cover;
     background-position: center;
     /* background-image: url("../img/projects/...); */
+}
+
+/* --------------------------------------------------------------------------------- */
+/* VIDEO CONTAINER */
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
 }
