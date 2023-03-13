@@ -90,6 +90,12 @@ h2 {
     color: white;
 }
 
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /* --------------------------------------------------------------------------------- */
 
@@ -483,12 +489,47 @@ max-width: 1000px; */
     margin-right: -50vw;
 }
 
+.banner.tall {
+    width: 100vw;
+    height: 70vh;
+    min-height: 150px;
+    max-height: none;
+}
+
+.banner-text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .banner .img-container {
     min-width: 100%;
     min-height: 100%;
     background-size: cover;
     background-position: center;
     /* background-image: url("../img/projects/...); */
+}
+
+.banner .gradient-container {
+    min-width: 100%;
+    min-height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(60deg, var(--accentColor), rgba(28, 219, 124, 1), var(--accentColor));
+    background-size: 600%, 600%;
+    animation: bgAnimatedGradient 30s infinite linear;
+}
+
+@keyframes bgAnimatedGradient {
+    0% {
+        background-position: 0 85%;
+    }
+    50% {
+        background-position: 100% 20%;
+    }
+    100% {
+        background-position: 85% 0;
+    }
 }
 
 
