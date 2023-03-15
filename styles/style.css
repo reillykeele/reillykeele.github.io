@@ -537,20 +537,21 @@ grid-item p {
     min-height: 100%;
     background-size: cover;
     background-position: center;
-    background-image: linear-gradient(60deg, var(--accentColor), rgba(28, 219, 124, 1), var(--accentColor));
+    background-color: var(--accentColor);
+    background-image: linear-gradient(60deg, var(--accentColor), rgba(28, 219, 124, 1));
     background-size: 600%, 600%;
-    animation: bgAnimatedGradient 30s infinite linear;
+    animation: bgAnimatedGradient 15s infinite linear;
 }
 
 @keyframes bgAnimatedGradient {
     0% {
-        background-position: 0 85%;
+        background-position: 0 60%;
     }
     50% {
         background-position: 100% 20%;
     }
     100% {
-        background-position: 85% 0;
+        background-position: 0 60%;
     }
 }
 
