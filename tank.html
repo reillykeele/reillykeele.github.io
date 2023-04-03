@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+
+<HTML lang="en">
+<!-- The head's job is to contain metadata about hte doc -->
+
+<HEAD>
+
+    <meta charset="utf-8">
+
+    <meta name="author" content="Reilly Keele">
+    <meta name="description" content="Fourth year student at the University of Alberta in Edmonton, AB, pursuing a B.Sc. Computing Science Specialization in Game Development.">
+    <meta content='width=device-width, initial-scale=1' name='viewport' />
+
+    <TITLE>Tank! | Reilly Keele</TITLE>
+
+    <link rel="shortcut icon" href="img/r-icon.png" type="image/svg">
+    <link rel="stylesheet" href="styles/style.css" type="text/css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/SharedLayout.js"></script>
+</HEAD>
+
+<BODY>
+
+    <div id="loaded-layout-nav"></div>
+
+    <div class="content">
+
+        <div class="banner">
+            <div class="img-container" style='background-image: url(" ../img/projects/tank/gameplay.png");'></div>
+        </div>
+
+        <h1>Tank!</h1>
+
+        <div class="section">
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/xxzUaQlK9sg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <p>
+            <i>Tank!</i> is a game inspired by the <i>Tanks</i> minigame in <i>Wii Play</i>, independently develeopd in 10 days during March 2023. Building the gameplay features for this game allowed me to refine, and refactor some of the game-agnostic
+            core systems I created for <a href="kart-racer.html">Kario Kart</a> and <a href="descension.html">Descension</a>.
+        </p>
+
+        <p>Some key development accomplishments include:</p>
+        <ul>
+            <li>Utilized behaviour trees to create extensible and customizable AI behaviour.</li>
+            <li>Experimented with NavMeshes and NavMesh agents for pathfinding.</li>
+            <li>Refactored and extended the <a href="kart-racer.html">Kario Kart</a> UI system.</li>
+        </ul>
+
+        <p>
+            In the future, I would love to add 2 player online mulitplayer. I think that both co-op and deathmatch gamemodes would be well-suited for the gameplay systems, and it would be a really fun challenge. Theres also a lot of room for visual improvements to
+            the game, such as better explosions, tank trails, and environment assets. The game is also completely lacking audio, which would add a lot to the presentation, but I deemed wasn't a priority.
+        </p>
+
+        <p>Tools and Technologies:</p>
+        <ul>
+            <li>Unity 2022.2.12f1</li>
+            <li>C#</li>
+        </ul>
+
+        <p>
+            For Windows and Mac downloads of the current build, please visit
+            <a target="_blank" href="https://rkeele.itch.io/tank">the Tank! itch.io page</a>. You can also view the
+            <a target="_blank" href="https://github.com/reillykeele/wii-play-tanks">source code on GitHub.</a>
+        </P>
+
+    </div>
+
+    <div id="loaded-layout-footer"></div>
+
+</BODY>
+
+</HTML>
