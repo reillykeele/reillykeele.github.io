@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+
+<HTML lang="en">
+<!-- The head's job is to contain metadata about hte doc -->
+
+<HEAD>
+
+    <meta charset="utf-8">
+
+    <meta name="author" content="Reilly Keele">
+    <meta name="description" content="Fourth year student at the University of Alberta in Edmonton, AB, pursuing a B.Sc. Computing Science Specialization in Game Development.">
+    <meta content='width=device-width, initial-scale=1' name='viewport' />
+
+    <TITLE>Hades Character Controller | Reilly Keele</TITLE>
+
+    <link rel="shortcut icon" href="img/r-icon.png" type="image/svg">
+    <link rel="stylesheet" href="styles/style.css" type="text/css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/SharedLayout.js"></script>
+</HEAD>
+
+<BODY>
+
+    <div id="loaded-layout-nav"></div>
+
+    <div class="content">
+
+        <!-- <div class="banner">
+            <div class="img-container" style='background-image: url(" ../img/projects/tank/gameplay.png");'></div>
+        </div> -->
+
+        <h1>Hades FSM Character Controller</h1>
+
+        <p>
+            Using the stygian blade combat system from Hades as a reference, I created a scriptable object based Finite State Machine to drive the character controller. The controller features a three-hit combo, a dash, and a special.
+        </p>
+
+        <img class="img-container" src="img/projects/hades-cc/fsm-graph.png">
+
+        <p>
+            Each state controls various behaviours through the player controller such as attacking, invoking events, and triggering animations.
+        </p>
+
+        <p>
+            When I started working on this, I was mostly interested in creating a simple combat system with chainable combos. This led me to developing the state machine that can be reused and expanded upon in future projects. Some gameplay captures can be observed
+            below:
+        </p>
+
+        <video width="100%" autoplay loop>
+            <source src="img/projects/hades-cc/hades-cc-combo.webm" type="video/webm">            
+            <img class="img-container" src="img/projects/hades-cc/hades-cc-combo.gif">
+        </video>
+
+        <video width="100%" autoplay loop>
+            <source src="img/projects/hades-cc/hades-cc-dash.webm" type="video/webm">            
+            <img class="img-container" src="img/projects/hades-cc/hades-cc-dash.gif">
+        </video>
+
+        <video width="100%" autoplay loop>
+            <source src="img/projects/hades-cc/hades-cc-special.webm" type="video/webm">            
+            <img class="img-container" src="img/projects/hades-cc/hades-cc-special.gif">
+        </video>
+
+        <p>
+            I would be interested in developing the combat system further in the future. In particular, adding a few simple enemies based on the Asphodel enemies in Hades and a small arena to duel them.
+        </p>
+
+        <p>Tools and Technologies:</p>
+        <ul>
+            <li>Unity 2022.2.15f1</li>
+            <li>C#</li>
+        </ul>
+
+        <p>
+            The source code and Unity project can be found <a target="_blank" href="https://github.com/reillykeele/hades-cc">on GitHub</a>.
+        </P>
+
+    </div>
+
+    <div id="loaded-layout-footer"></div>
+
+</BODY>
+
+</HTML>
